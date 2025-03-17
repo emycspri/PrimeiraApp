@@ -174,7 +174,7 @@ fun ProdutoItem() {
                     .padding(20.dp)
             ){
                 Text(
-                    text = "Cadastrar",
+                    text = "Enviar",
                     style = MaterialTheme.typography.titleSmall,
                     color = Color.White,
                     fontSize = 17.sp
