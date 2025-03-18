@@ -95,7 +95,10 @@ fun ProdutoItem() {
                 .fillMaxWidth()
         )
         {
-            var text by remember { mutableStateOf("") }
+            var textNome by remember { mutableStateOf("") }
+            var textTelefone by remember { mutableStateOf("") }
+            var textCurso by remember { mutableStateOf("") }
+            var textSerie by remember { mutableStateOf("") }
 
             TextField(
                 modifier = Modifier
@@ -104,11 +107,10 @@ fun ProdutoItem() {
                         width = 2.dp,
                         color = colorResource(R.color.purple_700),
                         shape = RoundedCornerShape(5.dp)
-                    )
-                    .background(Color.White),
-                value = text,
+                    ),
+                value = textNome,
                 onValueChange = { newText ->
-                    text = newText
+                    textNome = newText
                 },
                 label = { Text("Nome:") }
             )
@@ -122,11 +124,10 @@ fun ProdutoItem() {
                         width = 2.dp,
                         shape = RoundedCornerShape(5.dp),
                         color = colorResource(R.color.purple_700)
-                    )
-                    .background(Color.White),
-                value = text,
+                    ),
+                value = textTelefone,
                 onValueChange = { newText ->
-                    text = newText
+                    textTelefone = newText
                 },
                 label = { Text("Telefone:") }
             )
@@ -139,11 +140,10 @@ fun ProdutoItem() {
                         width = 2.dp,
                         color = colorResource(R.color.purple_700),
                         shape = RoundedCornerShape(5.dp)
-                    )
-                    .background(Color.White),
-                value = text,
+                    ),
+                value = textCurso,
                 onValueChange = { newText ->
-                    text = newText
+                    textCurso = newText
                 },
                 label = { Text("Curso:") }
             )
@@ -156,11 +156,10 @@ fun ProdutoItem() {
                         width = 2.dp,
                         color = colorResource(R.color.purple_700),
                         shape = RoundedCornerShape(5.dp)
-                    )
-                    .background(Color.White),
-                value = text,
+                    ),
+                value = textSerie,
                 onValueChange = { newText ->
-                    text = newText
+                    textSerie = newText
                 },
                 label = { Text("Série:") }
             )
